@@ -1,0 +1,159 @@
+#motion-text {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.motion-text-container {
+    margin: auto;
+    width: 700px;
+    height: 300px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
+    position: relative;
+    overflow: hidden; 
+}
+.motion1 {
+    font-weight: 600;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 25%;
+    font-size: calc(14px + 1vw);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.motion-text-container:hover .motion1 {
+    animation-name: motion1;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes motion1{
+    0% {
+        filter: blur(5px);
+        left: -5%;
+    }
+    25% {
+        filter: blur(4px);
+    }
+    50% {
+        filter: blur(3px);
+    }
+    75% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+.motion2 {
+    font-weight: 600;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 33%;
+    font-size: calc(14px + 1vw);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.motion-text-container:hover .motion2 {
+    animation-name: motion2;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes motion2{
+    0% {
+        filter: blur(5px);
+        bottom: -5%;
+    }
+    25% {
+        filter: blur(4px);
+    }
+    50% {
+        filter: blur(3px);
+    }
+    75% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+.motion3 {
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40%;
+    font-size: calc(14px + 1vw);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.motion-text-container:hover .motion3 {
+    animation-name: motion3;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes motion3{
+    0% {
+        filter: blur(5px);
+        top: -5%;
+    }
+    25% {
+        filter: blur(4px);
+    }
+    50% {
+        filter: blur(3px);
+    }
+    75% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+.motion4 {
+    font-weight: 600;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 25%;
+    font-size: calc(14px + 1vw);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.motion-text-container:hover .motion4 {
+    animation-name: motion4;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+} 
+@keyframes motion4{
+    0% {
+        filter: blur(5px);
+        right: -5%;
+    }
+    25% {
+        filter: blur(4px);
+    }
+    50% {
+        filter: blur(3px);
+    }
+    75% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+@media screen and (max-width: 700px) {
+    .motion-text-container {
+        width: 100%;
+    }
+}
